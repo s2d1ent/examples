@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mouse-parallax {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  background: red;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.mouse-parallax-bg {
+  position: absolute;
+  background-color: yellow;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 50%;
+  transition: all 0.1s ease;
+}
+</style>
+</head>
+<body>
+  <div class="mouse-parallax">
+      <div class="mouse-parallax-bg"></div>
+  </div>
+<script type="text/javascript">
+  var bg = document.querySelector('.mouse-parallax-bg');
+  window.addEventListener('mousemove', function(e) {
+  	var x = e.clientX / window.innerWidth;
+  	var y = e.clientY / window.innerHeight;
+    console.log(x + "\n" + y)
+  	bg.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+  });
+</script>
+</body>
+</html>
