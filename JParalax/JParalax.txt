@@ -1,2 +1,4 @@
 <script src="js/jquery.parallax.min.js"></script>
 <script src="js/jquery.event.frame.js"></script>
+
+Max version JQuery, which can use JParalax is 1.8.3;
