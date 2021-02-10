@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Check special symbol HTML</title>
     <script type="text/javascript" src="jquery_3_5_1.js"></script>
     <style media="screen">
-    body {
-      display: flex;
-      justify-content: center;
-    }
-      .input, .output {
-        width: 500px;
-        height: 200px;
-      }
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        textarea {
+          resize: none;
+        }
+        .input,
+        .output {
+            width: 500px;
+            height: 200px;
+        }
     </style>
 
-  </head>
+</head>
+
 <body>
-<input type="text" class="input">
-<button type="button" class="btn" name="button">Check</button>
-<input type="text" class="output">
+    <textarea class="input"></textarea>
+    <button type="button" class="btn" name="button">Check</button>
+    <textarea class="output" disabled></textarea>
 
 
-<script type="text/javascript">
 
-$(".btn").bind ("click",()=>{
-  var text=$(".input").val();
-  Array.from(text)
-
-  if (text.includes("<")==true) {
-    for (var i=0;i<$(".input").length;i++) {
-      var el=text[i]
-      if (el.includes("<")==true) {
-        console.log(i)
-      }
-      console.log(i)
-    }
-  }
-
-    $(".output").val(text)
-})
-
-
-</script>
+    <script type="text/javascript">
+        $(".btn").bind("click", () => {
+            var text = $(".input").val();
+                text = $(".input").val().replace(/>/g, '&gt;');
+            if (text.includes("<")==true) {
+            text= text.replace(/</g,"&lt;")
+            }
+            if (text.includes(">")==true) {
+            text= text.replace(/>/g,"&gt;")
+            }
+            $(".output").val(text)
+        })
+    </script>
 </body>
+
 </html>
