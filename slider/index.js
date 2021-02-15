@@ -18,14 +18,12 @@ var LazyCote= new Project();
 arr.push(LazyCote);
 LazyCote.name="LazyCote";
 LazyCote.description="Description about project";
-
 var Nyan= new Project();
 arr.push(Nyan);
 Nyan.name="s2d1ent";
 Nyan.description="Description about project";
 var btn=0;
 change()
-
   $(".container-btn").bind("click",(event)=>{
     if (Array.from($(".container-btn")).indexOf(event.target)==0) {
       btn--;
@@ -44,11 +42,9 @@ function change (){
   switch (btn){
     case 0:
      LazyCote.Data("#8110c7"," no-repeat url('src/LazyCote_code.png')");
-       //console.log(btn)
     break;
     case 1:
      Nyan.Data("#00ff2a"," no-repeat url('src/LazyCote_code.png')");
-    //   console.log(btn)
     break;
     default:
   }
