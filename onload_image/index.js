@@ -20,8 +20,8 @@ var i=-1;
   async function download() {
       i++;
       link=$(image[i]).attr("data-src")
-      result =  fetch(link)
-      $(image[i]).removeClass("beforeLoad").attr("src",link).removeAttr("data-src")
+      result = fetch(link);
+      $(image[i]).removeClass("beforeLoad").attr("src",fetch(link)).removeAttr("data-src")
       if (i>=image.length) {return}
       download()
     }
