@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TouchEvent</title>
+    <style media="screen">
+      .div {
+        width: 100px;
+        height:100px;
+        background: red;
+        }
+        .div2 {
+          width: 100px;
+          height:100px;
+          border:solid red 2px;
+          }
+    </style>
+  </head>
+  <body>
+    <div class="div">
+    </div>
+    <div class="div2">
+    </div>
+    <script type="text/javascript">
+      var div=document.querySelector(".div"),
+          div2=document.querySelector(".div2");
+      div.addEventListener("touchstart",()=>{console.log("Нажал");});
+      div.addEventListener("touchend",()=>{console.log("Отпустил");});
+      div2.addEventListener("touchmove",()=>{event.preventDefault();console.log("Потянул");});
+    </script>
+  </body>
+</html>
