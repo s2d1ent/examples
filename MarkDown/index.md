@@ -55,10 +55,9 @@ function () {
 
 ---
 
-one / two / Three
+one | two | Three
 :--- | :---: | ---:
-under one/ under two/ under three
+under one | under two | under three
 
 > Невозможно написать хороший код с первого раза
-<br>
-   > Возможно, только не говорите эльфу
+   >> Возможно, только не говорите эльфу
