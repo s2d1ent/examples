@@ -45,6 +45,7 @@ a{
   width: 100px;
   transition: .5s;
   opacity: .5;
+  z-index: -1;
 }
 .container-btn:hover .container-btnImg {
   opacity: .8;
