@@ -8,10 +8,10 @@
 Simple text
 
 Head<br>
--item
--item
--item
-   -item in item
+- item
+- item
+- item
+   - item in item
 
 3. item
 6. item
@@ -25,7 +25,7 @@ Head<br>
 
 ***text***
 
-~~ text ~~
+~~text~~
 
 [me](https://vk.com/vornfrosti)
 
@@ -53,9 +53,12 @@ function () {
 
 ```
 
+---
+
 one / two / Three
 :--- | :---: | ---:
 under one/ under two/ under three
 
 > Невозможно написать хороший код с первого раза
+<br>
    > Возможно, только не говорите эльфу
