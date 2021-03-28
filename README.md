@@ -1,11 +1,7 @@
 #This repository was created because i'am must more lazy.
-
 Abbreviation:
-
-+n = add new
-
--d/-c = deleted or clearing
-
++n = add new,
+-d/-c = deleted or clearing,
 rwt = rewrite
 
 
