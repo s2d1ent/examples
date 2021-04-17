@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery_1_11_0.js"></script>
+    <script type="text/javascript" src="gsap.js"></script>
+    <script src="wavify.js"></script>
+    <script src="jquery.wavify.js"></script>
+    <title>JQUERY.WAVY</title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding:0;
+      }
+      body {
+        font-family: "Rubik";
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        max-width:1920px;
+        width:100%;
+        height:100vh;
+        background:#20252A;
+      }
+      h1 {
+        font-size: 70px;
+        font-weight:700;
+        color:#fff;
+
+      }
+      div, a {
+        color:#fff;
+      }
+      #svg{
+        transform:rotate(0deg);
+        position:absolute;
+        top:0;
+        left:0;
+        //height:100px;
+        z-index:-1;
+      }
+      #svg1{
+        transform:rotate(180deg);
+        position:absolute;
+        top:0;
+        left:0;
+        //height:100px;
+        z-index:-1;
+      }
+      img {
+        width: 50vw;
+        opacity:0.8;
+      }
+    </style>
+  </head>
+  <body>
+
+    <svg id="svg" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID" d=""/></svg>
+    <svg id="svg1" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID2" d=""/></svg>
+      <h1>Wavy waves</h1>
+      <div>
+        If you have bad PC or you here width phone, you maybe have probleme
+      </div>
+      <div class="">
+        <a href="https://lazycote.github.io/">Visit my site</a>
+      </div>
+
+    <script type="text/javascript" >
+      var myWave = $('#myID').wavify({
+        height: 550,
+        bones: 8,
+        amplitude: 40,
+        color: 'rgba(150, 97, 255, .8)',
+        speed: .15
+      });
+      var myWave = $('#myID2').wavify({
+        height: 350,
+        bones: 8,
+        amplitude: 40,
+        color: 'rgba(170, 216, 247, .8)',
+        speed: .15
+      });
+    </script>
+  </body>
+</html>
