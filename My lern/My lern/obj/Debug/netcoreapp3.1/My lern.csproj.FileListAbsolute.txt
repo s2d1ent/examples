@@ -1,0 +1,13 @@
+D:\Моё портфолио\C#\My lern\My lern\bin\Debug\netcoreapp3.1\My lern.exe
+D:\Моё портфолио\C#\My lern\My lern\bin\Debug\netcoreapp3.1\My lern.deps.json
+D:\Моё портфолио\C#\My lern\My lern\bin\Debug\netcoreapp3.1\My lern.runtimeconfig.json
+D:\Моё портфолио\C#\My lern\My lern\bin\Debug\netcoreapp3.1\My lern.runtimeconfig.dev.json
+D:\Моё портфолио\C#\My lern\My lern\bin\Debug\netcoreapp3.1\My lern.dll
+D:\Моё портфолио\C#\My lern\My lern\bin\Debug\netcoreapp3.1\My lern.pdb
+D:\Моё портфолио\C#\My lern\My lern\obj\Debug\netcoreapp3.1\My lern.csprojAssemblyReference.cache
+D:\Моё портфолио\C#\My lern\My lern\obj\Debug\netcoreapp3.1\My lern.AssemblyInfoInputs.cache
+D:\Моё портфолио\C#\My lern\My lern\obj\Debug\netcoreapp3.1\My lern.AssemblyInfo.cs
+D:\Моё портфолио\C#\My lern\My lern\obj\Debug\netcoreapp3.1\My lern.csproj.CoreCompileInputs.cache
+D:\Моё портфолио\C#\My lern\My lern\obj\Debug\netcoreapp3.1\My lern.dll
+D:\Моё портфолио\C#\My lern\My lern\obj\Debug\netcoreapp3.1\My lern.pdb
+D:\Моё портфолио\C#\My lern\My lern\obj\Debug\netcoreapp3.1\My lern.genruntimeconfig.cache
